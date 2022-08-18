@@ -20,6 +20,8 @@ Do the following:
    HINT: no function required
 */
 
+var votingAge = '18';
+console.log(votingAge);
 
 
 /*
@@ -33,10 +35,18 @@ Do the following:
 
    HINT: no function required
 */
+function validDrinkingAge(myAge) {
+  const ageDrink = 21;
+  // let myAge = 20;
+  if (myAge >= ageDrink) {
+    console.log('Legal to Drink');
+  }
+  else {
+    console.log('Too young to drink');
+  }
+}
 
-
-
-
+console.log(validDrinkingAge(22))
 
 /*
 Task 1c - Convert Strings to Numbers (not auto tested)
@@ -49,8 +59,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+Number('1999')
+Number('1999') === 1999
+console.log(Number('1999'))
 
 /*
 Task 1d - Multiply
@@ -61,10 +72,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
 }
-
+console.log(multiply())
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -77,9 +88,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanYears) {
+  
+  return humanYears * 7;
 }
+console.log(dogYears(5))
 
 
 
